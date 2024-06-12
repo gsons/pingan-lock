@@ -1,0 +1,11 @@
+/* pages/index/index.wxss */
+
+.wrap-lock{
+  text-align: center;
+  margin: 160rpx auto;
+}
+
+.wrap-lock .t-button{
+  width: 160rpx !important;
+  height: 160rpx;
+}

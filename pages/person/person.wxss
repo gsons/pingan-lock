@@ -1,0 +1,6 @@
+/* pages/person/person.wxss */
+
+.avatar{
+  border-radius: 50%;
+}
+

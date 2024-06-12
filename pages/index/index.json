@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+      "t-swiper": "tdesign-miniprogram/swiper/swiper",
+      "t-fab": "tdesign-miniprogram/fab/fab",
+      "t-cell": "tdesign-miniprogram/cell/cell",
+      "t-button": "tdesign-miniprogram/button/button",
+      "t-notice-bar": "tdesign-miniprogram/notice-bar/notice-bar"
+    }
+}

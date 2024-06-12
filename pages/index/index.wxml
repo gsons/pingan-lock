@@ -1,0 +1,21 @@
+<t-swiper
+  current="{{current}}"
+  autoplay="{{autoplay}}"
+  duration="{{duration}}"
+  interval="{{interval}}"
+  list="{{swiperList}}"
+  navigation="{{ { type: 'dots-bar' } }}"
+/>
+<t-notice-bar
+  prefixIcon="sound"
+  visible="{{visible}}"
+  marquee="{{marquee2}}"
+  content="提示文字描述提示文字描述提示文字描述提示文字描述文"
+></t-notice-bar>
+
+<t-cell left-icon="lock-on" title="大门一号" description="鹤龙街道马务社区景至大街23号"  />
+
+<view class="wrap-lock">
+   <t-button icon="lock-off" size="large" content="" shape="circle" theme="primary">
+   </t-button>
+</view>

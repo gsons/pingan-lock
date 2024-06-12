@@ -1,0 +1,11 @@
+<t-cell title="17665444545" description="" >
+  <view class="avatar" slot="left-icon">
+    <open-data type="userAvatarUrl" />
+  </view>
+</t-cell>
+
+<t-cell-group theme="card">
+  <t-cell title="应用设置" leftIcon="service" hover arrow />
+  <t-cell title="使用帮助" leftIcon="internet" hover arrow />
+  <t-cell title="意见反馈" leftIcon="lock-on" hover arrow />
+</t-cell-group>
