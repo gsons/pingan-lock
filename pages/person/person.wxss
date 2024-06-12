@@ -1,6 +1,9 @@
 /* pages/person/person.wxss */
 
-.avatar{
-  border-radius: 50%;
+.avatar {
+    width: 100rpx;
+    height: 100rpx;
+    background-color: #eee;
+    border-radius: 50%;
 }
 

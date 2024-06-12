@@ -1,13 +1,42 @@
 // pages/lock/lock.js
+import BluetoothDoor from "../../lib/BluetoothDoor";
+const bluetoothDoor = new BluetoothDoor();
+
+var lock_json_arr = [{
+        title: '大门门禁1号',
+        bluetoothName: 'BY58F3CB61C',
+        productKey: '7FBE27A26E9EE52F',
+        bluetoothSN: '8472858A',
+        auto: true,
+    },
+    {
+        title: '大门门禁2号',
+        bluetoothName: 'BYB764D6F0F',
+        productKey: '3B62A31470525ADF',
+        bluetoothSN: 'DBA49E76',
+        auto: false,
+    }
+];
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-      items: ['light', 'dark', 'outline', 'light-outline'],
+        items: ['light', 'dark', 'outline', 'light-outline'],
+        lock_json_arr: lock_json_arr,
     },
+    doAdd() {
 
+    },
+    openDoor(detail) {
+        const {
+            index,
+            item
+        } = detail.currentTarget.dataset;
+        bluetoothDoor.init(item.bluetoothName, item.productKey, item.bluetoothSN);
+        bluetoothDoor.openDoor();
+    },
     /**
      * 生命周期函数--监听页面加载
      */
@@ -26,7 +55,7 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow() {
-      this.getTabBar().init();
+        this.getTabBar().init();
     },
 
     /**
