@@ -10,7 +10,7 @@
   prefixIcon="sound"
   visible="{{visible}}"
   marquee="{{marquee2}}"
-  content="提示文字描述提示文字描述提示文字描述提示文字描述文"
+  content="无法正常开门时，请检查蓝牙是否开启，开门时请尽量靠近门锁"
 ></t-notice-bar>
 
 

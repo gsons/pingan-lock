@@ -46,7 +46,7 @@ Page({
      */
     onShow() {
        this.getTabBar().init();
-       bluetoothDoor.searchOpenDoor(false);
+       //bluetoothDoor.searchOpenDoor(false);
     },
 
     async seartchOpenDoor(){
