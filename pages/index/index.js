@@ -1,7 +1,7 @@
 const imageCdn = 'https://xcx.pinganbaiyun.cn/p_093_hd/gdfw/images/';
 const swiperList = [
   `${imageCdn}/ad_003_eletric_001.png`,
-  `${imageCdn}/ad_004_eletric_002.jpg`
+  `${imageCdn}/ad_003_eletric_001.png`
 ];
 import BluetoothDoor from "../../lib/BluetoothDoor";
 const bluetoothDoor = new BluetoothDoor();
