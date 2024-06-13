@@ -1,0 +1,33 @@
+<view class="container">
+
+  <t-cell-group title="{{title}}">
+
+    <view class="wrapper">
+      <t-input label="设备名称" placeholder="请输入设备名称" model:value="{{bluetoothName}}"></t-input>
+    </view>
+
+    <view class="wrapper">
+      <t-input label="设备系列号" placeholder="请输入设备系列号" model:value="{{bluetoothSN}}"></t-input>
+    </view>
+
+    <view class="wrapper">
+      <t-input label="设备秘钥" placeholder="请输入设备秘钥" model:value="{{productKey}}"></t-input>
+    </view>
+
+    <view class="wrapper">
+      <t-cell title="自动开锁">
+        <t-switch value="{{auto}}" slot="note" bindchange="autoLockChange"/>
+      </t-cell>
+    </view>
+
+    <view class="wrapper">
+      <t-input label="设备备注" placeholder="请输入设备备注" model:value="{{bluetoothTitle}}"></t-input>
+    </view>
+
+
+    <t-cell title="">
+      <t-button theme="primary" size="large" slot="title" bind:tap="submit">提 交</t-button>
+    </t-cell>
+
+  </t-cell-group>
+</view>

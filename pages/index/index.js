@@ -3,7 +3,8 @@ const swiperList = [
   `${imageCdn}/ad_003_eletric_001.png`,
   `${imageCdn}/ad_004_eletric_002.jpg`
 ];
-
+import BluetoothDoor from "../../lib/BluetoothDoor";
+const bluetoothDoor = new BluetoothDoor();
 
 // pages/index/index.js
 Page({
@@ -30,7 +31,7 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-
+     
     },
 
     /**
@@ -44,7 +45,12 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow() {
-      this.getTabBar().init();
+       this.getTabBar().init();
+       bluetoothDoor.searchOpenDoor(false);
+    },
+
+    async seartchOpenDoor(){
+       bluetoothDoor.searchOpenDoor(true);
     },
 
     /**
@@ -79,6 +85,9 @@ Page({
      * 用户点击右上角分享
      */
     onShareAppMessage() {
-
+      return {  
+        title: '门禁首页', 
+        path: '/pages/index/index'
+      };  
     }
 })

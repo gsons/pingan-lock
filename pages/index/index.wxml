@@ -13,9 +13,12 @@
   content="提示文字描述提示文字描述提示文字描述提示文字描述文"
 ></t-notice-bar>
 
-<t-cell left-icon="lock-on" title="大门一号" description="鹤龙街道马务社区景至大街23号"  />
+
+<!-- <t-cell left-icon="lock-on" title="大门一号" description=""  >
+  <view slot='description'><text>状态:</text> <text style="color: green;">正常</text> </view>
+</t-cell> -->
 
 <view class="wrap-lock">
-   <t-button icon="lock-off" size="large" content="" shape="circle" theme="primary">
+   <t-button icon="lock-off" bind:tap="seartchOpenDoor" size="large" content="" shape="circle" theme="primary">
    </t-button>
 </view>

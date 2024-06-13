@@ -1,132 +1,11 @@
 {
     "pages": [
-      "pages/lock/lock",
-      "pages/person/person",
         "pages/index/index",
-        "pages/home/home",
-        "pages/button/button",
-        "pages/tabs/tabs",
-        "pages/icon/icon",
-        "pages/loading/loading",
-        "pages/progress/progress",
-        "pages/cascader/cascader",
-        "pages/cell/cell",
-        "pages/cell-group/cell-group",
-        "pages/collapse/collapse",
-        "pages/input/input",
-        "pages/badge/badge",
-        "pages/textarea/textarea",
-        "pages/message/message",
-        "pages/toast/toast",
-        "pages/stepper/stepper",
-        "pages/slider/slider",
-        "pages/radio/radio",
-        "pages/switch/switch",
-        "pages/sticky/sticky",
-        "pages/tag/tag",
-        "pages/checkbox/checkbox",
-        "pages/gulp-error/index",
-        "pages/fab/fab",
-        "pages/tab-bar/tab-bar",
-        "pages/transition/transition",
-        "pages/popup/popup",
-        "pages/steps/steps",
-        "pages/dropdown-menu/dropdown-menu",
-        "pages/drawer/drawer",
-        "pages/pull-down-refresh/pull-down-refresh",
-        "pages/skeleton/skeleton",
-        "pages/footer/footer",
-        "pages/divider/divider",
-        "pages/empty/empty",
-        "pages/back-top/back-top",
-        "pages/grid/grid",
-        "pages/upload/upload",
-        "pages/count-down/count-down",
-        "pages/overlay/overlay",
-        "pages/image/image",
-        "pages/search/search",
-        "pages/home/navigateFail/navigateFail",
-        "pages/navbar/navbar",
-        "pages/date-time-picker/date-time-picker",
-        "pages/notice-bar/notice-bar",
-        "pages/image-viewer/image-viewer",
-        "pages/result/result",
-        "pages/result/result-page",
-        "pages/link/link"
-    ],
-    "subpackages": [
-        {
-            "root": "pages/side-bar/",
-            "pages": [
-                "side-bar",
-                "base/index",
-                "switch/index",
-                "custom/index",
-                "with-icon/index"
-            ]
-        },
-        {
-            "root": "pages/action-sheet/",
-            "pages": [
-                "action-sheet"
-            ]
-        },
-        {
-            "root": "pages/avatar/",
-            "pages": [
-                "avatar"
-            ]
-        },
-        {
-            "root": "pages/calendar/",
-            "pages": [
-                "calendar"
-            ]
-        },
-        {
-            "root": "pages/dialog/",
-            "pages": [
-                "dialog"
-            ]
-        },
-        {
-            "root": "pages/picker/",
-            "pages": [
-                "picker"
-            ]
-        },
-        {
-            "root": "pages/rate/",
-            "pages": [
-                "rate"
-            ]
-        },
-        {
-            "root": "pages/swiper/",
-            "pages": [
-                "swiper"
-            ]
-        },
-        {
-            "root": "pages/swipe-cell/",
-            "pages": [
-                "swipe-cell"
-            ]
-        },
-        {
-            "root": "pages/tree-select/",
-            "pages": [
-                "tree-select"
-            ]
-        },
-        {
-            "root": "pages/indexes/",
-            "pages": [
-                "indexes",
-                "base/index",
-                "custom/index"
-            ]
-        }
+        "pages/lock/lock",
+        "pages/person/person",
+        "pages/door/door",
+        "pages/swipe-cell/swipe-cell"
+       
     ],
     "tabBar": {
         "custom": true,
@@ -135,33 +14,32 @@
         "backgroundColor": "#ffffff",
         "borderStyle": "black",
         "list": [
-          {
-            "pagePath": "pages/index/index",
-            "text": "首页"
-          },
-          {
-            "pagePath": "pages/lock/lock",
-            "text": "门禁"
-          },
-          {
-            "pagePath": "pages/person/person",
-            "text": "我的"
-          }
+            {
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/lock/lock",
+                "text": "门禁"
+            },
+            {
+                "pagePath": "pages/person/person",
+                "text": "我的"
+            }
         ]
     },
     "usingComponents": {
         "t-demo": "./components/demo-block/index",
         "t-button": "tdesign-miniprogram/button/button",
+        "t-toast": "tdesign-miniprogram/toast/toast",
         "t-icon": "tdesign-miniprogram/icon/icon",
-        "custom-tab-bar":"./custom-tab-bar/index"
+        "custom-tab-bar": "./custom-tab-bar/index"
     },
-    "window":{
-        "backgroundTextStyle":"light",
+    "window": {
+        "backgroundTextStyle": "light",
         "navigationBarBackgroundColor": "#0052d9",
         "navigationBarTitleText": "晃晃开门",
-        "navigationBarTextStyle":"white"
-      },
+        "navigationBarTextStyle": "white"
+    },
     "sitemapLocation": "sitemap.json"
 }
-
-

@@ -1,14 +1,21 @@
 <view>
     <t-cell-group title="门禁列表">
        <block   wx:key="index" wx:for="{{lock_json_arr}}"  >
-        <t-cell left-icon="lock-on" title="{{item.title}}" >
+        <t-swipe-cell>
+        <view slot="right" class="btn edit-btn" data-item="{{item}}" data-index="{{index}}" bind:tap="onEdit">编辑</view>
+        <view slot="right" class="btn delete-btn" data-item="{{item}}" data-index="{{index}}"  bind:tap="onDelete">删除</view>
+
+        <t-cell left-icon="lock-on" title="{{item.bluetoothTitle}}" >
             <view slot='description'><text>状态:</text> <text style="color: green;">正常</text> </view>
             <t-button size="small" theme="primary" data-item="{{item}}" data-index="{{index}}" bindtap="openDoor" slot='note'>开门</t-button>
             <text slot="note">自动</text>
-            <t-switch defaultValue="{{item.auto}}" slot="note" />
+            <t-switch defaultValue="{{item.auto}}" slot="note" data-item="{{item}}" bindchange="autoLockChange"/>
         </t-cell>
+      </t-swipe-cell>
     </block>
     </t-cell-group>
 
     <t-fab icon="add" bind:click="doAdd" style="right:80rpx;bottom:200rpx;" aria-label="增加"></t-fab>
 </view>
+
+

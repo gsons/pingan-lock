@@ -1,22 +1,9 @@
 // pages/lock/lock.js
 import BluetoothDoor from "../../lib/BluetoothDoor";
 const bluetoothDoor = new BluetoothDoor();
+import Door from "../../lib/Door";
+const door = new Door();
 
-var lock_json_arr = [{
-        title: '大门门禁1号',
-        bluetoothName: 'BY58F3CB61C',
-        productKey: '7FBE27A26E9EE52F',
-        bluetoothSN: '8472858A',
-        auto: true,
-    },
-    {
-        title: '大门门禁2号',
-        bluetoothName: 'BYB764D6F0F',
-        productKey: '3B62A31470525ADF',
-        bluetoothSN: 'DBA49E76',
-        auto: false,
-    }
-];
 Page({
 
     /**
@@ -24,16 +11,34 @@ Page({
      */
     data: {
         items: ['light', 'dark', 'outline', 'light-outline'],
-        lock_json_arr: lock_json_arr,
+        lock_json_arr: [],
+    },
+    autoLockChange(e){
+      const {item} = e.currentTarget.dataset;
+      item.auto= e.detail.value;
+      door.addOrUpdate(item)
+      const lock_json_arr=door.getDoorList();
+      this.setData({lock_json_arr});
+    },
+    onDelete(detail) {
+      const {item} = detail.currentTarget.dataset;
+      door.delete(item.productKey);
+      const lock_json_arr=door.getDoorList();
+      this.setData({lock_json_arr});
+    },
+    onEdit(detail) {
+      const {item} = detail.currentTarget.dataset;
+      wx.navigateTo({
+        url: '/pages/door/door?key='+item.productKey
+      })
     },
     doAdd() {
-
+      wx.navigateTo({
+        url: '/pages/door/door',
+      })
     },
     openDoor(detail) {
-        const {
-            index,
-            item
-        } = detail.currentTarget.dataset;
+        const {item} = detail.currentTarget.dataset;
         bluetoothDoor.init(item.bluetoothName, item.productKey, item.bluetoothSN);
         bluetoothDoor.openDoor();
     },
@@ -41,7 +46,6 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-
     },
 
     /**
@@ -56,6 +60,8 @@ Page({
      */
     onShow() {
         this.getTabBar().init();
+        const lock_json_arr=door.getDoorList();
+        this.setData({lock_json_arr});
     },
 
     /**
@@ -76,7 +82,7 @@ Page({
      * 页面相关事件处理函数--监听用户下拉动作
      */
     onPullDownRefresh() {
-
+      return false;
     },
 
     /**
@@ -90,6 +96,9 @@ Page({
      * 用户点击右上角分享
      */
     onShareAppMessage() {
-
+      return {  
+        title: '门禁列表', 
+        path: '/pages/lock/lock'
+      };  
     }
 })

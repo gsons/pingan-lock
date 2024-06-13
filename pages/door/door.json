@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+      "t-input": "tdesign-miniprogram/input/input",
+      "t-switch": "tdesign-miniprogram/switch/switch",
+      "t-cell": "tdesign-miniprogram/cell/cell",
+      "t-cell-group": "tdesign-miniprogram/cell-group/cell-group",
+      "t-button": "tdesign-miniprogram/button/button"
+    }
+}
