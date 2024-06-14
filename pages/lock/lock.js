@@ -52,6 +52,13 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
+        door.refreshLock().then(()=>{
+          const lock_json_arr=door.getDoorList();
+          console.info("刷新门禁数据成功")
+          this.setData({lock_json_arr});
+        }).catch((err)=>{
+           console.warn("刷新门禁数据失败",err)
+        });
     },
 
     /**

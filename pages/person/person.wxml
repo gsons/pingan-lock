@@ -8,8 +8,9 @@
 
 <t-cell-group theme="card" style="margin-top: 30rpx;">
   <t-cell title="应用设置" leftIcon="setting" hover arrow />
+  <t-cell title="同步门禁" leftIcon="refresh" bind:tap="refreshLock" hover arrow />
   <t-cell title="使用帮助" leftIcon="help-circle" hover arrow />
   <t-cell title="意见反馈" leftIcon="info-circle" hover arrow />
-  <t-cell title="程序版本" leftIcon="app" note="2.3.3"  />
+  <t-cell title="程序版本" leftIcon="app" note="2.4.1"  />
 </t-cell-group>
 
