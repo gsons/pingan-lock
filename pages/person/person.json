@@ -2,9 +2,8 @@
   "usingComponents": {
     "t-cell-group": "tdesign-miniprogram/cell-group/cell-group",
     "t-cell": "tdesign-miniprogram/cell/cell",
-    "t-tag": "tdesign-miniprogram/tag/tag",
-    "t-check-tag": "tdesign-miniprogram/check-tag/check-tag",
     "t-button": "tdesign-miniprogram/button/button",
     "t-switch": "tdesign-miniprogram/switch/switch"
-  }
+  },
+  "disableScroll":true
 }

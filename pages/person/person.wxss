@@ -3,7 +3,7 @@
 .avatar {
     width: 100rpx;
     height: 100rpx;
-    background-color: #eee;
+    background-color: #ddd;
     border-radius: 50%;
 }
 

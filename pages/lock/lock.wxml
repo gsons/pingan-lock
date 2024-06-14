@@ -7,7 +7,7 @@
 
         <t-cell left-icon="lock-on" title="{{item.bluetoothTitle}}" >
             <view slot='description'><text>状态:</text> <text style="color: green;">正常</text> </view>
-            <t-button size="small" theme="primary" data-item="{{item}}" data-index="{{index}}" bindtap="openDoor" slot='note'>开门</t-button>
+            <t-button size="small" loading="{{btn_loading_obj[item['productKey']]}}" theme="primary" data-item="{{item}}" data-index="{{index}}" bindtap="openDoor" slot='note'>开门</t-button>
             <text slot="note">自动</text>
             <t-switch defaultValue="{{item.auto}}" slot="note" data-item="{{item}}" bindchange="autoLockChange"/>
         </t-cell>

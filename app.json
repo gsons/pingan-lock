@@ -1,11 +1,9 @@
 {
     "pages": [
-        "pages/index/index",
         "pages/lock/lock",
+        "pages/index/index",
         "pages/person/person",
-        "pages/door/door",
-        "pages/swipe-cell/swipe-cell"
-       
+        "pages/door/door"
     ],
     "tabBar": {
         "custom": true,
@@ -29,9 +27,7 @@
         ]
     },
     "usingComponents": {
-        "t-demo": "./components/demo-block/index",
         "t-button": "tdesign-miniprogram/button/button",
-        "t-toast": "tdesign-miniprogram/toast/toast",
         "t-icon": "tdesign-miniprogram/icon/icon",
         "custom-tab-bar": "./custom-tab-bar/index"
     },
@@ -41,5 +37,6 @@
         "navigationBarTitleText": "晃晃开门",
         "navigationBarTextStyle": "white"
     },
-    "sitemapLocation": "sitemap.json"
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents"
 }

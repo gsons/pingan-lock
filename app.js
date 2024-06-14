@@ -2,15 +2,14 @@
 
 import BluetoothDoor from "./lib/BluetoothDoor";
 const bluetoothDoor = new BluetoothDoor();
+import updateManager from './common/updateManager';
 
 
 App({
-    onShow() {
-        bluetoothDoor.searchOpenDoor(false);
-        // if (gulpError !== 'gulpErrorPlaceHolder') {
-        //     wx.redirectTo({
-        //         url: `/pages/gulp-error/index?gulpError=${gulpError}`,
-        //     });
-        // }
-    },
+  onLaunch() {
+    bluetoothDoor.searchOpenDoor(false);
+  },
+  onShow() {
+    updateManager();
+  },
 });

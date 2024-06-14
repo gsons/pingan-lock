@@ -12,6 +12,7 @@ Page({
     data: {
         items: ['light', 'dark', 'outline', 'light-outline'],
         lock_json_arr: [],
+        btn_loading_obj:{},
     },
     autoLockChange(e){
       const {item} = e.currentTarget.dataset;
@@ -39,8 +40,13 @@ Page({
     },
     openDoor(detail) {
         const {item} = detail.currentTarget.dataset;
+        this.data.btn_loading_obj[[item.productKey]]=true;
+        this.setData({btn_loading_obj: this.data.btn_loading_obj});
         bluetoothDoor.init(item.bluetoothName, item.productKey, item.bluetoothSN);
-        bluetoothDoor.openDoor();
+        bluetoothDoor.openDoor(()=>{
+          this.data.btn_loading_obj[[item.productKey]]=false;
+          this.setData({btn_loading_obj: this.data.btn_loading_obj});
+        });
     },
     /**
      * 生命周期函数--监听页面加载
