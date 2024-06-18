@@ -9,7 +9,7 @@
             <view slot='description'><text>状态:</text> <text style="color: green;">正常</text> </view>
             <t-button size="small" loading="{{btn_loading_obj[item['productKey']]}}" theme="primary" data-item="{{item}}" data-index="{{index}}" bindtap="openDoor" slot='note'>开门</t-button>
             <text slot="note">自动</text>
-            <t-switch defaultValue="{{item.auto}}" slot="note" data-item="{{item}}" bindchange="autoLockChange"/>
+            <t-switch default-value="{{item.auto}}"  value="{{item.auto}}" slot="note" data-item="{{item}}" bindchange="autoLockChange"/>
         </t-cell>
       </t-swipe-cell>
     </block>
