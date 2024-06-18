@@ -1,28 +1,28 @@
 {
   "miniVersion": "v2",
   "name": "晃晃开门",
-  "version": "0.0.1",
+  "version": "2.4.1",
   "i18nFilePath": "i18n",
   "mini-android": {
     "sdkVersion": "1.2.9",
     "toolkitVersion": "0.10.0",
     "useExtendedSdk": {
       "media": false,
-      "bluetooth": false,
-      "network": false,
-      "scanner": false,
+      "bluetooth": true,
+      "network": true,
+      "scanner": true,
       "xweb": false
     },
     "icons": {
-      "hdpi": "",
-      "xhdpi": "",
-      "xxhdpi": "",
-      "xxxhdpi": ""
+      "hdpi": "d:/迅雷下载/Designer.png",
+      "xhdpi": "d:/迅雷下载/Designer.png",
+      "xxhdpi": "d:/迅雷下载/Designer.png",
+      "xxxhdpi": "d:/迅雷下载/Designer.png"
     },
     "splashscreen": {
-      "hdpi": "",
-      "xhdpi": "",
-      "xxhdpi": ""
+      "hdpi": "d:/迅雷下载/Designer.png",
+      "xhdpi": "d:/迅雷下载/Designer.png",
+      "xxhdpi": "d:/迅雷下载/Designer.png"
     },
     "enableVConsole": "open",
     "privacy": {
@@ -34,8 +34,8 @@
     "toolkitVersion": "0.0.9",
     "useExtendedSdk": {
       "WeAppOpenFuns": true,
-      "WeAppNetwork": false,
-      "WeAppBluetooth": false,
+      "WeAppNetwork": true,
+      "WeAppBluetooth": true,
       "WeAppMedia": false,
       "WeAppLBS": false,
       "WeAppOthers": false
@@ -61,6 +61,10 @@
     "enableOpenUrlNavigate": true,
     "buildCloud": {
       "useRemote": false
+    },
+    "privateDescriptions": {
+      "NSBluetoothPeripheralUsageDescription": "用于开门",
+      "NSBluetoothAlwaysUsageDescription": "用于开门"
     }
   },
   "versionCode": 100
