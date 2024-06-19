@@ -14,17 +14,17 @@
       "xweb": false
     },
     "icons": {
-      "hdpi": "miniapp/android/icons/Designer.png",
-      "xhdpi": "miniapp/android/icons/Designer.png",
-      "xxhdpi": "miniapp/android/icons/Designer.png",
-      "xxxhdpi": "miniapp/android/icons/Designer.png"
+      "hdpi": "miniapp/icons/logo-72.png",
+      "xhdpi": "miniapp/icons/logo-100.png",
+      "xxhdpi": "miniapp/icons/logo-144.png",
+      "xxxhdpi": "miniapp/icons/logo-196.png"
     },
     "splashscreen": {
-      "hdpi": "miniapp/android/icons/Designer.png",
-      "xhdpi": "miniapp/android/icons/Designer.png",
-      "xxhdpi": "miniapp/android/icons/Designer.png"
+      "hdpi": "miniapp/icons/logo.png",
+      "xhdpi": "miniapp/icons/logo.png",
+      "xxhdpi": "miniapp/icons/logo.png"
     },
-    "enableVConsole": "open",
+    "enableVConsole": "close",
     "privacy": {
       "enable": true
     }
@@ -40,17 +40,25 @@
       "WeAppLBS": false,
       "WeAppOthers": false
     },
-    "enableVConsole": "open",
+    "enableVConsole": "close",
     "icons": {
-      "mainIcon120": "miniapp/ios/icons/Designer.png",
-      "mainIcon180": "",
-      "spotlightIcon80": "miniapp/ios/icons/Designer.png",
-      "spotlightIcon120": "miniapp/ios/icons/Designer.png",
-      "settingsIcon58": "",
-      "settingsIcon87": "",
-      "notificationIcon40": "",
-      "notificationIcon60": "",
-      "appStore1024": ""
+      "mainIcon120": "miniapp/icons/logo-120.png",
+      "mainIcon180": "miniapp/icons/logo-180.png",
+      "spotlightIcon80": "miniapp/icons/logo-80.png",
+      "spotlightIcon120": "miniapp/icons/logo-120.png",
+      "settingsIcon58": "miniapp/icons/logo-58.png",
+      "settingsIcon87": "miniapp/icons/logo-87.png",
+      "notificationIcon40": "miniapp/icons/logo-40.png",
+      "notificationIcon60": "miniapp/icons/logo.png",
+      "appStore1024": "miniapp/icons/logo.png",
+      "ipadMainIcon152": "miniapp/icons/logo-152.png",
+      "ipadMainIcon167": "miniapp/icons/logo-167.png",
+      "ipadSpotlightIcon40": "miniapp/icons/logo-40.png",
+      "ipadSpotlightIcon80": "miniapp/icons/logo-80.png",
+      "ipadSettingsIcon29": "miniapp/icons/logo-29.png",
+      "ipadSpotlightIcon58": "miniapp/icons/logo-58.png",
+      "ipadNotificationIcon20": "miniapp/icons/logo-20.png",
+      "ipadNotificationIcon40": "miniapp/icons/logo-40.png"
     },
     "splashScreen": {
       "customImage": ""
@@ -65,7 +73,10 @@
     "privateDescriptions": {
       "NSBluetoothPeripheralUsageDescription": "用于开门",
       "NSBluetoothAlwaysUsageDescription": "用于开门"
+    },
+    "splashscreen": {
+      "customImage": "miniapp/icons/logo.png"
     }
   },
-  "versionCode": 100
+  "versionCode": 243
 }
