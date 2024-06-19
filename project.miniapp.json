@@ -1,7 +1,7 @@
 {
   "miniVersion": "v2",
   "name": "晃晃开门",
-  "version": "2.4.1",
+  "version": "2.4.3",
   "i18nFilePath": "i18n",
   "mini-android": {
     "sdkVersion": "1.2.9",
@@ -14,15 +14,15 @@
       "xweb": false
     },
     "icons": {
-      "hdpi": "d:/迅雷下载/Designer.png",
-      "xhdpi": "d:/迅雷下载/Designer.png",
-      "xxhdpi": "d:/迅雷下载/Designer.png",
-      "xxxhdpi": "d:/迅雷下载/Designer.png"
+      "hdpi": "miniapp/android/icons/Designer.png",
+      "xhdpi": "miniapp/android/icons/Designer.png",
+      "xxhdpi": "miniapp/android/icons/Designer.png",
+      "xxxhdpi": "miniapp/android/icons/Designer.png"
     },
     "splashscreen": {
-      "hdpi": "d:/迅雷下载/Designer.png",
-      "xhdpi": "d:/迅雷下载/Designer.png",
-      "xxhdpi": "d:/迅雷下载/Designer.png"
+      "hdpi": "miniapp/android/icons/Designer.png",
+      "xhdpi": "miniapp/android/icons/Designer.png",
+      "xxhdpi": "miniapp/android/icons/Designer.png"
     },
     "enableVConsole": "open",
     "privacy": {
@@ -42,10 +42,10 @@
     },
     "enableVConsole": "open",
     "icons": {
-      "mainIcon120": "",
+      "mainIcon120": "miniapp/ios/icons/Designer.png",
       "mainIcon180": "",
-      "spotlightIcon80": "",
-      "spotlightIcon120": "",
+      "spotlightIcon80": "miniapp/ios/icons/Designer.png",
+      "spotlightIcon120": "miniapp/ios/icons/Designer.png",
       "settingsIcon58": "",
       "settingsIcon87": "",
       "notificationIcon40": "",

@@ -18,6 +18,10 @@ Page({
       onLoad(options) {
 
       },
+      
+      opensetting(){
+         wx.openSetting();
+      },
 
       refreshLock() {
         wx.showLoading({

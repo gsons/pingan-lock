@@ -1,5 +1,9 @@
 /* pages/person/person.wxss */
 
+page{
+
+}
+
 .avatar {
     width: 100rpx;
     height: 100rpx;
@@ -7,3 +11,15 @@
     border-radius: 50%;
 }
 
+.t-cell{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  height: 110rpx !important;
+}
+
+.t-button{
+  justify-content: left !important;
+  padding: 0 !important;
+  font-weight: normal !important;
+  color: rgba(0,0,0,0.9) !important;
+}
