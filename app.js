@@ -7,9 +7,13 @@ import updateManager from './common/updateManager';
 
 App({
   onLaunch() {
-    bluetoothDoor.searchOpenDoor(false);
+   
   },
   onShow() {
+    var page=getCurrentPages().pop();
+    if(!page||page.route=='pages/lock/lock'){
+      bluetoothDoor.searchOpenDoor(false);
+    }
     updateManager();
   },
 });
