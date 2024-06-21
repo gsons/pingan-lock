@@ -11,14 +11,13 @@
   <t-cell title="同步门禁" leftIcon="refresh" bind:tap="refreshLock" hover arrow />
 
   <t-cell leftIcon="help-circle" hover arrow >
-    <t-button class="contcat"  hover-class="none" open-type="contact" block slot="title" variant="text" content="使用帮助" />
+    <t-button class="contcat"  hover-class="none" open-type="contact" block slot="title" variant="text" content="在线客服" />
   </t-cell>
 
   <t-cell  leftIcon="info-circle"  arrow >
-     <t-button class="contcat" hover-class="none" open-type="contact" block slot="title" variant="text" content="意见反馈" />
+     <t-button class="contcat" hover-class="none" open-type="feedback" block slot="title" variant="text" content="意见反馈" />
   </t-cell>
   
-  <t-cell title="程序版本" leftIcon="app" note="2.4.3"  />
+  <t-cell title="程序版本" leftIcon="app" note="2.5.0" bind:longpress="debugUi"/>
 
 </t-cell-group>
-

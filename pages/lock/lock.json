@@ -6,7 +6,6 @@
       "t-fab": "tdesign-miniprogram/fab/fab",
       "t-button": "tdesign-miniprogram/button/button",
       "t-switch": "tdesign-miniprogram/switch/switch"
-    },
-    "disableScroll":true
+    }
 }
 

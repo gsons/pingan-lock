@@ -6,9 +6,9 @@
         <view slot="right" class="btn delete-btn" data-item="{{item}}" data-index="{{index}}"  bind:tap="onDelete">删除</view>
 
         <t-cell left-icon="lock-on" title="{{item.bluetoothTitle}}" >
-            <view slot='description'><text>状态:</text> <text style="color: green;">正常</text> </view>
-            <t-button size="small" loading="{{btn_loading_obj[item['productKey']]}}" theme="primary" data-item="{{item}}" data-index="{{index}}" bindtap="openDoor" slot='note'>开门</t-button>
-            <text slot="note">自动</text>
+            <t-button size="small"  theme="primary" loading="{{btn_loading_obj[item['productKey']]}}" class="btn-open-door" slot='note'  data-item="{{item}}" data-index="{{index}}" bindtap="openDoor" >开门</t-button>
+            <t-button open-type="share" size="extra-small"  class="btn-open-share" icon="share" theme="default"  data-item="{{item}}" data-index="{{index}}"  slot='description' bindtap="openShare" >分享</t-button>
+            <text slot="note" >自动</text>
             <t-switch default-value="{{item.auto}}"  value="{{item.auto}}" slot="note" data-item="{{item}}" bindchange="autoLockChange"/>
         </t-cell>
       </t-swipe-cell>

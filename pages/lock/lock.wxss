@@ -24,3 +24,25 @@
 .favor-btn {
   background-color: #0052d9;
 }
+ 
+.t-cell{
+  padding-right:10rpx !important;
+}
+
+.t-cell .t-button{
+  margin-right: 10rpx;
+}
+
+.t-cell__title{
+  flex:1 !important;
+  padding: 0 10rpx;
+}
+
+.t-cell__note{
+  flex:initial !important;
+  width: 320rpx;
+}
+
+.btn-open-door{
+
+}
