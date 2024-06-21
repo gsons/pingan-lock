@@ -153,14 +153,16 @@ Page({
       const param= encodeURIComponent(JSON.stringify(this.data.share_door));
       console.log("share param ",param);
       return {
-        title: `来自分享的门禁“${this.data.share_door.bluetoothTitle}”`,
+        title: `“${this.data.share_door.bluetoothTitle}”，来自分享的门禁。`,
         path: '/pages/lock/lock?param='+param,
         imageUrl:"/assets/logo-180.png"
       };
     }else{
-       wx.showToast({
-         title: '请点分享按钮后分享',
-       })
+      return {
+        title: `分享失败！请点分享按钮分享门禁`,
+        path: '/pages/lock/lock',
+        imageUrl:"/assets/logo-180.png"
+      };
     }
   }
 

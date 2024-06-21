@@ -40,7 +40,7 @@
       "WeAppLBS": false,
       "WeAppOthers": false
     },
-    "enableVConsole": "open",
+    "enableVConsole": "close",
     "icons": {
       "mainIcon120": "miniapp/icons/logo-120.png",
       "mainIcon180": "miniapp/icons/logo-180.png",
