@@ -40,13 +40,16 @@ Page({
         icon: 'none'
       })
 
-    } else if (!opt.bluetoothSN) {
-      await wx.showToast({
-        title: '设备系列号不能为空',
-        icon: 'none'
-      })
-
-    } else if (!opt.bluetoothTitle) {
+    }
+    
+    // else if (!opt.bluetoothSN) {
+    //   await wx.showToast({
+    //     title: '设备系列号不能为空',
+    //     icon: 'none'
+    //   })
+    // }
+    
+    else if (!opt.bluetoothTitle) {
       await wx.showToast({
         title: '设备备注不能为空',
         icon: 'none'
