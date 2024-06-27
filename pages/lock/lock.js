@@ -3,7 +3,7 @@ import BluetoothDoor from "../../lib/BluetoothDoor";
 const bluetoothDoor = new BluetoothDoor();
 import Door from "../../lib/Door";
 const door = new Door();
-
+const app=getApp();
 Page({
 
   /**
@@ -57,6 +57,7 @@ Page({
     this.setData({
       share_door:item
     });
+    app.last_share_time=+new Date();
   },
 
   openDoor(detail) {
@@ -82,6 +83,7 @@ Page({
     if (options && options.param) {
         const item= JSON.parse(decodeURIComponent(options.param));
         console.log("读取分享门禁信息，，",item);
+        item['bluetoothTitle']="来自分享的门禁，"+item['bluetoothTitle'];
         door.addOrUpdate(item);
         wx.reLaunch({
           url: '/pages/lock/lock',
