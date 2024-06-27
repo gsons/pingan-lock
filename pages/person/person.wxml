@@ -18,6 +18,6 @@
      <t-button class="contcat" hover-class="none" open-type="feedback" block slot="title" variant="text" content="意见反馈" />
   </t-cell>
   
-  <t-cell title="程序版本" leftIcon="app" note="3.0.2" bind:longpress="debugUi"/>
+  <t-cell title="程序版本" leftIcon="app" note="3.1.0" bind:longpress="debugUi"/>
 
 </t-cell-group>
