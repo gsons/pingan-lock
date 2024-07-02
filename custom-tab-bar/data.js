@@ -5,7 +5,7 @@ export default [
     url: 'pages/index/index',
   },
   {
-    icon: 'lock-off',
+    icon: 'lock-on',
     text: '门禁',
     url: 'pages/lock/lock',
   },

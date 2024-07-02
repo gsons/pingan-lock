@@ -14,11 +14,11 @@
       <t-input label="设备秘钥" placeholder="请输入设备秘钥" model:value="{{productKey}}"></t-input>
     </view>
 
-    <view class="wrapper">
+    <!-- <view class="wrapper">
       <t-cell title="自动开锁">
         <t-switch value="{{auto}}" slot="note" bindchange="autoLockChange"/>
       </t-cell>
-    </view>
+    </view> -->
 
     <view class="wrapper">
       <t-input label="设备备注" placeholder="请输入设备备注" model:value="{{bluetoothTitle}}"></t-input>

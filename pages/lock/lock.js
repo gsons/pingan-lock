@@ -83,7 +83,7 @@ Page({
     if (options && options.param) {
         const item= JSON.parse(decodeURIComponent(options.param));
         console.log("读取分享门禁信息，，",item);
-        item['bluetoothTitle']="来自分享的门禁，"+item['bluetoothTitle'];
+        //item['bluetoothTitle']="来自分享的门禁，"+item['bluetoothTitle'];
         door.addOrUpdate(item);
         wx.reLaunch({
           url: '/pages/lock/lock',
